@@ -1,0 +1,65 @@
+/* 全体コンテナ */
+.job-list-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* 左: サイドバー 1/4, 右: コンテンツ 3/4 */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* サイドバー */
+  .filter-sidebar {
+    position: relative; /* 重なり防止 */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    z-index: 1; /* ヘッダーより下 */
+  }
+  
+  /* メインコンテンツ */
+  .main-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* 求人カテゴリリスト */
+  .filter-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .filter-sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  /* チェックボックス */
+  .filter-sidebar input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* セレクトボックス */
+  .filter-sidebar select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* 求人リスト */
+  .main-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .main-content li {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+  
+  .main-content h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
